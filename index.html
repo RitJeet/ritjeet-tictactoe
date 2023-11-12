@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+
+<audio autoplay loop >
+ <source src="gameloop.mp3" type="audio/mp3"/>
+</audio>
+    <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp" id="navigate">
+            <!--<div class="logo"><img src="img/logo.jpeg" alt="logo">--->
+            <li><a href="#" id="active">Home</a></li>
+            <li><a href="aboutus.html">About&nbsp;&nbsp;us</a></li>
+            <li><a href="moregames.html">More&nbsp;Games</a></li>
+            <li><a href="aboutus.html">Contact&nbsp;&nbsp;us</a></li>
+        </ul>
+        <!--<div class="rightnav v-class-resp">
+    </div>-->
+        <div class="burger" id="burger" data-aos="zoom-in-down">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div class="background">
+        <section class="firstsection">
+
+            <div class="box-main del">
+                <div class="firsthalf dela" data-aos="flip-right">
+                    <p class="text-big tit main">
+                        Hi Friends ,
+                    </p>
+                    <p class="text-small tat">
+                        This Web page I made for play free games <br>
+                        Hope you are enjoy in my website <br>
+                        This webpage is absolutely free of cost .
+                    </p>
+
+                </div>
+                <div class="secondhalf">
+                    <!--<img src="logo.jpeg" alt="logo">-->
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <section class="section">
+        <div class="paras" data-aos="zoom-in-up">
+            <img src="tictac.png" alt="">
+            <p class="sectiontag text-big main1">
+                Here You Can Play Tic Tac Toe Game
+            </p>
+            <p class="sectionsubtag text-small" id="bengali">           
+            <div class="bnt"><a href="tictacgame.html">Pass And Play</a>
+            </div>
+           
+
+            </p>
+
+        </div>
+        
+    </section>
+
+
+
+</body>
+<script>
+    burger = document.querySelector('.burger')
+    navbar = document.querySelector('.navbar')
+    navlist = document.querySelector('.nav-list')
+    //rightnav=document.querySelector('.rightnav')
+    burger.addEventListener('click', () => {
+        navlist.classList.toggle('v-class-resp')
+        navbar.classList.toggle('h-nav-resp')
+
+    })
+</script>
+
+</html>
